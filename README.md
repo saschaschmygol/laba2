@@ -12,4 +12,5 @@ ____
 среда разработки PyCharm 2020
 Открыть проект можно в PyCharm фаил llaba2.py.
 
-
+![screen_2](https://github.com/saschaschmygol/laba2/raw/main/RU.png)
+![screen_2](https://github.com/saschaschmygol/laba2/raw/main/EN.png)
