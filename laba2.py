@@ -1,9 +1,24 @@
 Ru_alfavit = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
 En_alfavit = 'abcdefghijklmnopqrstuvwxyz'
 
-sdvig = int(input('Введите шаг сдвига '))
-mess = str(input('Введите сообщение для шифровки'))
-mess = mess.lower()
+while True:
+    try:
+        sdvig = int(input('Введите шаг сдвига '))
+        break
+    except ValueError:
+        print('Водите число!!!!!!')
+
+
+Flag = True
+while Flag:
+    mess = str(input('Введите сообщение для шифровки'))
+    mess = mess.lower()
+    for i in mess:
+        if i not in Ru_alfavit and i not in En_alfavit:
+            print('такого символа нет в алфавите, введите верное сообщение')
+        else:
+            Flag = False
+
 
 lang = input('какой язык использовать? RU/EN')
 slovo = ''
