@@ -23,7 +23,7 @@ while Flag:
 lang = input('какой язык использовать? RU/EN')
 slovo = ''
 
-if lang == 'RU':
+if lang == 'RU':                                     # шифровка русского слова
     for i in mess:
         mesto = Ru_alfavit.find(i)
         mesto2 = mesto + sdvig
@@ -32,7 +32,7 @@ if lang == 'RU':
         simvol = Ru_alfavit[mesto2]
         slovo += simvol
 
-else:
+else:                                                # шифровка английского слова
     for i in mess:
         mesto = En_alfavit.find(i)
         mesto2 = mesto + sdvig
